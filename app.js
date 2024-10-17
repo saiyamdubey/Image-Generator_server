@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Endpoint to generate media (handle the Pixabay API calls)
 app.get("/generate-media", async (req, res) => {
-    const prompt  = "dog";
+   const prompt  = "dog";
 
     if (!prompt || prompt.trim() === "") {
         return res.status(400).json({ message: "Prompt is required" });
