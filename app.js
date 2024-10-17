@@ -5,6 +5,7 @@ const dotenv = require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
 // Middleware to serve static HTML files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
